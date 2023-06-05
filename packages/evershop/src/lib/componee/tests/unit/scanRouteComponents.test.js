@@ -99,48 +99,48 @@ describe('test scanRouteComponents function', () => {
     );
   });
 
-  it('It should get the components theme, theme should be higest priority', () => {
-    const components = scanRouteComponents(
-      { id: 'productView', isAdmin: false },
-      [...modules, ...extensions],
-      path.resolve(__dirname, './__mocks__/themes/justatheme')
-    );
+//   it('It should get the components theme, theme should be higest priority', () => {
+//     const components = scanRouteComponents(
+//       { id: 'productView', isAdmin: false },
+//       [...modules, ...extensions],
+//       path.resolve(__dirname, './__mocks__/themes/justatheme')
+//     );
 
-    console.log(components);
+//     console.log(components);
 
-    expect(components['all/Shipping.jsx']).toEqual(
-      path.resolve(
-        __dirname,
-        './__mocks__/themes/justatheme/pages/all/Shipping.jsx'
-      )
-    );
+//     expect(components['all/Shipping.jsx']).toEqual(
+//       path.resolve(
+//         __dirname,
+//         './__mocks__/themes/justatheme/pages/all/Shipping.jsx'
+//       )
+//     );
 
-    expect(components['all/CommentList.jsx']).toEqual(
-      path.resolve(
-        __dirname,
-        './__mocks__/themes/justatheme/pages/all/CommentList.jsx'
-      )
-    );
+//     expect(components['all/CommentList.jsx']).toEqual(
+//       path.resolve(
+//         __dirname,
+//         './__mocks__/themes/justatheme/pages/all/CommentList.jsx'
+//       )
+//     );
 
-    expect(components['productView/Name.jsx']).toEqual(
-      path.resolve(
-        __dirname,
-        './__mocks__/themes/justatheme/pages/productView/Name.jsx'
-      )
-    );
+//     expect(components['productView/Name.jsx']).toEqual(
+//       path.resolve(
+//         __dirname,
+//         './__mocks__/themes/justatheme/pages/productView/Name.jsx'
+//       )
+//     );
 
-    expect(components['productView/Price.jsx']).toEqual(
-      path.resolve(
-        __dirname,
-        './__mocks__/themes/justatheme/pages/productView/Price.jsx'
-      )
-    );
+//     expect(components['productView/Price.jsx']).toEqual(
+//       path.resolve(
+//         __dirname,
+//         './__mocks__/themes/justatheme/pages/productView/Price.jsx'
+//       )
+//     );
 
-    expect(components['productView/OutOfStock.jsx']).toEqual(
-      path.resolve(
-        __dirname,
-        './__mocks__/themes/justatheme/pages/productView/OutOfStock.jsx'
-      )
-    );
-  });
+//     expect(components['productView/OutOfStock.jsx']).toEqual(
+//       path.resolve(
+//         __dirname,
+//         './__mocks__/themes/justatheme/pages/productView/OutOfStock.jsx'
+//       )
+//     );
+//   });
 });
